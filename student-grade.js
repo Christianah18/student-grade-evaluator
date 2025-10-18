@@ -1,4 +1,4 @@
-function submitForm() {
+function submitButton() {
     let python = Number(document.getElementById ('python').value);
     let robotics = Number(document.getElementById ('robotics').value);
     let computer = Number(document.getElementById ('computer').value);
