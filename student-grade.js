@@ -8,6 +8,8 @@ function submitForm() {
 
 
     //  so as to  notify the users on what to do
+    
+    
     if(
        python > 100 || python < 0 ||
        robotics > 100 || robotics < 0 ||
@@ -27,12 +29,21 @@ function submitForm() {
     let grade = "";
 
 
-    if (average >= 80) grade = 'A';
-    else if (average >= 70) grade = 'B';
-    else if (average >= 60) grade = 'C';
-    else if (average >= 50) grade = 'D';
-    else if (average >= 40) grade = 'E';
-    else grade = 'F';
+
+    if (average < 0 || average > 100) {
+    } else if(average >= 70 && average <= 100){
+        grade = 'A';
+    } else if(average >= 60 && average <= 69){
+        grade = 'B';
+    } else if(average >= 50 && average <= 59){
+        grade = 'C';
+    } else if(average >= 45 && average <= 49){
+        grade = 'D';
+    } else if(average >= 40 && average <= 44){
+        grade = 'E';
+    } else{
+        grade = 'F';
+    }
 
     document.getElementById('total').value = total.toFixed(2);
     document.getElementById('average').value = average.toFixed(2);
