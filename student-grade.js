@@ -10,17 +10,29 @@ function submitButton() {
     //  so as to  notify the users on what to do
     
     
-    if(
-       python == "0" || python == "" ||
-       robotics == "0" || robotics == "" ||
-       computer == "0" || computer == "" ||
-       maths === "0" || maths == "" ||
-       chemistry == "0" || chemistry == "" ||
-       english == "0" || english == "" 
-    ){
+    if (
+        python < 0 || python > 100 ||
+        python == 0 || python == ""||
+
+        robotics < 0 || robotics > 100 ||
+        robotics == 0 || robotics == "" ||
+
+        computer < 0 || computer > 100 ||
+        computer == 0 || computer == "" ||
+
+        maths < 0 || maths > 100 ||
+        maths == 0 || maths == "" ||
+
+        chemistry < 0 || chemistry > 100 ||
+        chemistry == 0 || chemistry == "" ||
+
+        english < 0 || english > 100 ||
+        english == 0 || english == "" 
+    ) {
         alert('Invalid answer. Please enter number between 1 and 100.');
         return;
-    } 
+
+    }
 
 
 
@@ -48,17 +60,10 @@ function submitButton() {
         grade = 'F';
     }
 
-    // document.getElementById('total').value = total.toFixed (2);
-    // document.getElementById('average').value = average.toFixed(2);
-    // document.getElementById('grade').value = grade;
-
     document.getElementById("total").value = total.toFixed(2);
     document.getElementById("average").value = average.toFixed(2);
     document.getElementById("grade").value = grade;
 
 }
-
-
-console.log('result');
 
 
