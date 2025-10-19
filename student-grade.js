@@ -1,24 +1,24 @@
 function submitButton() {
-    let python = Number(document.getElementById ('python').value);
-    let robotics = Number(document.getElementById ('robotics').value);
-    let computer = Number(document.getElementById ('computer').value);
-    let maths = Number(document.getElementById ('maths').value);
-    let chemistry = Number(document.getElementById ('chemistry').value);
-    let english = Number(document.getElementById ('english').value);
+    let python = (document.getElementById ('python').value);
+    let robotics = (document.getElementById ('robotics').value);
+    let computer = (document.getElementById ('computer').value);
+    let maths = (document.getElementById ('maths').value);
+    let chemistry = (document.getElementById ('chemistry').value);
+    let english = (document.getElementById ('english').value);
 
 
     //  so as to  notify the users on what to do
     
     
     if(
-       python > 100 || python < 0 ||
-       robotics > 100 || robotics < 0 ||
-       computer > 100 || computer < 0 ||
-       maths > 100 || maths < 0 ||
-       chemistry > 100 || chemistry < 0 ||
-       english > 100 || english < 0 
+       python === "0" || python === "" ||
+       robotics === "0" || robotics === "" ||
+       computer === "0" || computer === "" ||
+       maths === "0" || maths === "" ||
+       chemistry === "0" || chemistry === "" ||
+       english === "0" || english === "" 
     ){
-        alert('Invalid number. Please enter number between 0 and 100.');
+        alert('Invalid answer. Please input any number between 0 to 100.');
         return;
     }
 
@@ -50,8 +50,5 @@ function submitButton() {
     document.getElementById('grade').value = grade;
 
 }
-
-
-console.log('result');
 
 

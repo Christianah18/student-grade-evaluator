@@ -1,4 +1,4 @@
-My name is Christianah Oluwafeyikemi, and my teammate is Idris ;
+My name is Christianah Oluwafeyikemi, and my teammate name is Idris ;
 
 we are in Group 1;
 
